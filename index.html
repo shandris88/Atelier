@@ -3,70 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Ателье по пошиву одежды</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="body">
 <header class="header">
-    <div class="header__logo">
-        <img src="" alt="Логотип компании по пошиву одежды">
-    </div>
-    <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">О компании</a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">Наши работы</a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">Услуги</a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="header__contacts contacts">
-        <a href="tel:+74992484434">+7 (499) 248-44-34</a>
-        <a href="tel:+74992483189">+7 (499) 248-31-89</a>
+    <div class="container">
+        <div class="header__wrap">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" alt="Логотип компании по пошиву одежды">
+            </div>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">О компании</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Наши работы</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Услуги</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts contacts">
+                <a href="tel:+74992484434">+7 (499) 248-44-34</a>
+                <span class="contacts__separator">|</span>
+                <a href="tel:+74992483189">+7 (499) 248-31-89</a>
+            </div>
+            <button type="button" class="header__burger visually-hidden"></button>
+        </div>
     </div>
 </header>
 <main class="main">
     <h1 class="visually-hidden">Ателье по пошиву одежды</h1>
-    <section class="index-banner">
-        <a href="#" class="index-banner__link"></a>
-        <div class="index-banner__description">
-            <span class="index-banner__text-big">Подгонка одежды</span>
-            <span class="index-banner__text-min">Точно по вашей фигуре</span>
+    <section class="index-banner" style="background-image: url(./assets/img/background-index.jpg);">
+        <div class="container">
+            <div class="index-banner__wrap">
+                    <a href="#" class="index-banner__link">Подробнее</a>
+                    <div class="index-banner__description">
+                        <span class="index-banner__text-big">Подгонка одежды</span>
+                        <span class="index-banner__text-min">Точно по вашей фигуре</span>
+                    </div>
+            </div>
         </div>
     </section>
     <section class="services">
-        <header class="services__title custom-title">
-            <h2>Наши услуги</h2>
-        </header>
-        <a href="#" class="services__item">
-            <span class="services__image">
-                <img src="" alt="">
-            </span>
-            <span class="services__name">Ремонт одежды</span>
-        </a>
-        <a href="#" class="services__item">
-            <span class="services__image">
-                <img src="" alt="">
-            </span>
-            <span class="services__name">Пошив одежды</span>
-        </a>
-        <a href="#" class="services__item">
-            <span class="services__image">
-                <img src="" alt="">
-            </span>
-            <span class="services__name">Изделия из меха</span>
-        </a>
-        <a href="#" class="services__item">
-            <span class="services__image">
-                <img src="" alt="">
-            </span>
-            <span class="services__name">Изделия из кожи</span>
-        </a>
+        <div class="container">
+            <div class="services__wrap">
+                        <header class="services__title custom-title">
+                            <h2>Наши услуги</h2>
+                        </header>
+                        <div class="services__wrapper">
+                              <a href="#" class="services__item">
+                                    <span class="services__image">
+                                        <img src="./assets/img/services1.jpg" alt="">
+                                    </span>
+                                    <span class="services__name">Ремонт одежды</span>
+                                </a>
+                                <a href="#" class="services__item">
+                                    <span class="services__image">
+                                        <img src="./assets/img/services2.jpg" alt="">
+                                    </span>
+                                    <span class="services__name">Пошив одежды</span>
+                                </a>
+                                <a href="#" class="services__item">
+                                    <span class="services__image">
+                                        <img src="./assets/img/services3.jpg" alt="">
+                                    </span>
+                                    <span class="services__name">Изделия из меха</span>
+                                </a>
+                                <a href="#" class="services__item">
+                                    <span class="services__image">
+                                        <img src="./assets/img/services4.jpg" alt="">
+                                    </span>
+                                    <span class="services__name">Изделия из кожи</span>
+                                </a>
+                    </div>
+            </div>
+        </div>
     </section>
     <section class="items-slider">
         <header class="item-slider__title custom-title custom-title_black">
@@ -89,11 +106,11 @@
     <div class="footer__top">
         <nav class="footer__navigation navigation">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">О компании</a>
+                <li class="navigation__item"><a href="#" class="navigation__link"></a>
                 </li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Наши работы</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Услуги</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
             </ul>
         </nav>
         <div class="footer__contacts contacts">
